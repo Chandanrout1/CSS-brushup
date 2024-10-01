@@ -1,0 +1,39 @@
+:root {
+    --color-light : lightgrey;
+    --color-drak: darkgrey;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.circles {
+    height: 1.5em;
+    width: 1.5em;
+    background: #000;
+    margin: .5rem;
+    border-radius: 50%;
+    animation: blink infinite alternate  .8s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes blink {
+    from {
+        background: var(--color-drak);
+    }
+
+    to {
+        background: var(--color-light);
+        height: 1.6em;
+        width: 1.6em;
+    }
+}
+
