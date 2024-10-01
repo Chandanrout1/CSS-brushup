@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    height: 1.5em;
+    width: 1.5em;
+    margin: .5em;
+    animation: rotate infinite 1.2s;
+}
+
+.square1 {
+    background: rgb(115, 115, 189);
+}
+
+.square2 {
+    background: rgb(77, 77, 237);
+}
+
+.square3 {
+    background: rgb(2, 2, 120);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-45deg);
+        background: rgb(186, 186, 236);
+    }
+
+    to {
+        transform: rotate(45deg);
+    }
+}
