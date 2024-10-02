@@ -1,0 +1,50 @@
+:root {
+    --font-main: "Noto-sans", sans-serif;
+    --flash-card-color : #39f2ef;
+    --font-color-main : #514e0f;
+}
+
+html, body {
+    font-family: var(--font-main);
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 200px;
+    width: 350px;
+    background: var(--flash-card-color);
+    color: var(--font-color-main);
+    padding: 2em;
+    margin: 2em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotatey(180deg);
+}
+
+.card-back {
+    display: none;
+}
+
+.card:hover .card-front {
+    display: none;
+}
+
+.card:hover .card-back {
+    display: block;
+    transform: rotatey(180deg);
+}
+
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+}
