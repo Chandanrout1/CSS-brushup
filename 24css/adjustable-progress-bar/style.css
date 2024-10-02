@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --progres-bar-bg : lightgray;
+    --stage1-bg : red; 
+    --stage2-bg : orangered; 
+    --stage3-bg : greenyellow; 
+    --stage4-bg : green; 
+}
+
+.container {
+    width: 80%;
+    margin: 60px auto;
+}
+
+.progress-bar {
+    height: 40px;
+    background: var(--progres-bar-bg);
+    border-radius: 20px;
+}
+
+.prog-stat {
+    height: 40px;
+    border-radius: 20px; 
+}
+
+.stage1 {
+    width: 25%;
+    background: var(--stage1-bg);
+}
+.stage2 {
+    width: 50%;
+    background: var(--stage2-bg);
+}
+.stage3 {
+    width: 75%;
+    background: var(--stage3-bg);
+}
+.stage4 {
+    width: 100%;
+    background: var(--stage4-bg);
+}
